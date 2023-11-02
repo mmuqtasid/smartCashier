@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Buttons</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta name="color-scheme" content="light dark">
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <link rel="icon" type="image/png" href="assets/icon/favicon.png">
+
+    <!-- add to homescreen for ios -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <style>
+        .calculator {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .calculator button {
+            flex: 0 0 25%; /* Adjust as needed for the desired number of buttons per row */
+            max-width: 25%;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 left-div">
+                <div class="black"></div>
+                <div class="small-div">
+                    πελατης λιανικης
+                </div>
+                <div class="calculator">
+                    <button id="cancel-button">Cancel</button>
+                    <button>X</button>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                        </svg>
+                    </button>
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button id="cancel-button">AC</button>
+                    <button>0</button>
+                    <button>.</button>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 right-div">
+                <div class="button-container">
+                    <button class="button user-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                        </svg>
+                    </button>
+                    <button class="button notes-icon">Notes</button>
+                    <button class="button gift-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16">
+                            <path d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z"/>
+                        </svg>
+                    </button>
+                    <button class="button cancel-button">Cancel</button>
+                    <button class="button blue">TMHMA 6%</button>
+                    <button class="button blue">Button 6</button>
+                    <button class="button blue">Button 7</button>
+                    <button class="button blue">Button 8</button>
+                    <button class="button1">PAY</button>
+                    <button class="button1">CASH</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
